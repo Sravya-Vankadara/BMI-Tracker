@@ -1,0 +1,39 @@
+﻿@page
+@model BMI_Tracker.Pages.NewFolder.IndexModel
+@{
+}
+
+<br>
+<h2> List of Clients</h2>
+<br>
+<a class='btn btn-primary btn-sm' href='/New Folder/Create'>New Client</a>
+<br>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID </th>
+            <th>Name</th>
+            <th>Email </th>
+            <th>Phone No.</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model.Pinfo)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.name</td>
+                <td>@item.email</td>
+                <td>@item.phone</td>
+                
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/New Folder/Edit?id=@item.id">Edit</a>
+                    <a class="btn btn-primary btn-sm" href="/New Folder/Delete?id=@item.id">Delete</a>
+                    <a class="btn btn-primary btn-sm" href="/New Folder/Details?id=@item.id">Details</a>
+                </td>
+      
+            </tr>
+        }
+    </tbody>
+</table>

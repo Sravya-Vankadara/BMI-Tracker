@@ -1,0 +1,26 @@
+﻿@page
+@using System.Data.SqlClient;
+
+@{
+    try
+    {
+        String id = Request.Query["id"];
+        String connectionString = "Data Source=.\\sqlexpress;Initial Catalog=BMI_Patients;Integrated Security=True";
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            connection.Open();
+            String query = "DELETE FROM PATIENTS WHERE id=@id";
+            using (SqlCommand c = new SqlCommand(query, connection))
+            {
+                c.Parameters.AddWithValue("@id", id);
+
+                c.ExecuteNonQuery();
+            }
+        }
+    }
+    catch (Exception ex)
+    {
+
+    }
+    Response.Redirect("/New Folder/");
+}
