@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/searchPatient.css" />
+    <title> Search Patient Page </title>
+    <style>
+        input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+        input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+        input[type="search"]::-webkit-search-decoration,
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-results-button,
+        input[type="search"]::-webkit-search-results-decoration { display: none; }
+    </style>
+</head>
+<body>
+    
+    <div id="header-container">
+        <h1 onclick="mainPage()"> Patient BMI Details </h1>
+        <div id="option-box">
+            <button type="button" onclick="addPatient()"> 
+                <span class="material-symbols-outlined"> person_add </span>
+            </button> 
+            <button type="button" onclick="mainPage()"> 
+                <span class="material-symbols-outlined"> home </span> 
+            </button>
+        </div>
+    </div>
+    
+    <form>
+        <div id="body-container">
+            <h1> Search Patient Name </h1>
+            <div>
+                <input type="search" id="searchName" placeholder="Search Patient" />
+                <button type="button" onclick="viewPatients()">
+                    <span class="material-symbols-outlined"> search </span>
+                </button>
+            </div>
+        </div>
+    </form>
+
+<script src="js/navPage.js"></script>
+<script src="js/searchPatient.js"></script>
+</body>
+</html>

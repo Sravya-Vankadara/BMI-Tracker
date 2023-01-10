@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(202, 229, 254);
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: rgb(193, 233, 249);
+    box-shadow: 0 0 20px gray;
+}
+
+#header-container > h1 {
+    cursor: pointer;
+}
+
+#header-container > #option-box > button {
+    width: 2rem;
+    border: solid 1px gray;
+    border-radius: .4rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+#header-container > #option-box > button > span {
+    padding-top: 0.22rem;
+}
+
+#body-container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#body-container > h1 {
+    padding-bottom: 1rem;
+}
+
+#body-container > table {
+    font-size: 1.2rem;
+}
+
+#body-container > table > tbody > tr > td {
+    padding: 0.5rem;
+}
+
+#body-container > table > tbody > tr > td > input {
+    font-size: 1rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 1rem;
+}
+
+#body-container > #addPatient-btn {
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: #ccffcc;
+    border: solid 0.5px gray;
+    cursor: pointer;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/addPatient.css" />
+    <title> Add Patient Page </title>
+</head>
+<body>
+    
+    <div id="header-container">
+        <h1 onclick="mainPage()"> Patient BMI Details </h1>
+        <div id="option-box"> 
+            <button type="button" onclick="searchPatient()"> 
+                <span class="material-symbols-outlined"> person_search </span> 
+            </button>
+            <button type="button" onclick="mainPage()"> 
+                <span class="material-symbols-outlined"> home </span>
+            </button>
+        </div>
+    </div>
+
+    <form>
+        <div id="body-container">
+            <h1> Add Patient Details </h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="formLabel"> <label for="patientName"> Patient Name </label> </td>
+                        <td> <input class="formInput" type="text" id="patientName" name="patientName" placeholder=" Name " required /> </td>
+                    </tr>
+                    <tr>
+                        <td class="formLabel"> <label for="Age"> Age </label> </td>
+                        <td> <input class="formInput" type="number" id="Age" name="age" placeholder=" Age " required /> </td>
+                    </tr>
+                    <tr>
+                        <td class="formLabel"> <label for="height"> Height </label> </td>
+                        <td> <input class="formInput" type="number" id="height" name="height" placeholder=" Height " required /> </td>
+                    </tr>
+                    <tr>
+                        <td class="formLabel"> <label for="weight"> Weight </label> </td>
+                        <td> <input class="formInput" type="number" id="weight" name="weight" placeholder=" Weight " required /> </td>
+                    </tr>
+                    <tr>
+                        <td class="formLabel"> <label for="testingDate"> Date </label> </td>
+                        <td> <input class="formInput" type="date" id="testingDate" name="testingDate" placeholder=" Date " required /> </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit" id="addPatient-btn"> Submit </button>
+        </div>
+    </form>
+
+<script src="js/navPage.js"></script>
+</body>
+</html>

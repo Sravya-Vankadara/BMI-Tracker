@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(202, 229, 254);
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: rgb(193, 233, 249);
+    box-shadow: 0 0 20px gray;
+}
+
+#header-container > h1 {
+    cursor: pointer;
+}
+
+#header-container > #option-box > button {
+    width: 2rem;
+    border: solid 1px gray;
+    border-radius: .4rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+#header-container > #option-box > button > span {
+    padding-top: 0.22rem;
+}
+
+#body-container {
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#body-container > #content {
+    margin: auto;
+    width: 40%;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px gray;
+    float: left;
+}
+
+#body-container > #content > h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+#body-container > #content > p {
+    padding-bottom: 1rem;
+}
+
+#body-container > img {
+    padding-right: 5rem;
+    width: 45%;
+}

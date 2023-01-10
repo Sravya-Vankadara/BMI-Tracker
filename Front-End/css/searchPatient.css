@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(202, 229, 254);
+}
+
+#header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: rgb(193, 233, 249);
+    box-shadow: 0 0 20px gray;
+}
+
+#header-container > h1 {
+    cursor: pointer;
+}
+
+#header-container > #option-box > button {
+    width: 2rem;
+    border: solid 1px gray;
+    border-radius: .4rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+#header-container > #option-box > button > span {
+    padding-top: 0.22rem;
+}
+
+#body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+}
+
+#body-container > h1 {
+    padding-bottom: 2rem;
+}
+
+#body-container > div {
+    position: relative;
+}
+
+#body-container > div > input {
+    font-size: 1rem;
+    padding: 0.3rem 2rem 0.3rem 0.6rem;
+}
+
+#body-container > div > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
